@@ -43,9 +43,15 @@ body{
 .carousel-item{
   height: 300px;
 }
-.carousel img{
+.carousel-item img{
   position: absolute;
   top: 0;
   left: 0;
   min-height: 300px;
+}
+#carouselButton{
+  right: 0px;
+  bottom: 0px;
+  position: absolute;
+  z-index: 1;
 }
