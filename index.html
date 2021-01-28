@@ -88,14 +88,92 @@
                   <img src="img/logo.png" class="img-fluid" alt="logo">
                 </div>
                 <div class=" col-12 col-sm-3 align-self-center ">
-                  <a role="button" href="#reserve" class=" btn btn-warning btn-block nav-link"
-                  data-toggle="tooltip" data-html="true" title="Or Call us at <br><strong>+852 12345678</strong>"
-                  data-placement="bottom" >Reserve Table</a>
+                  <a role="button" data-target="#reserveModal" data-toggle="modal" class=" btn btn-warning btn-block nav-link">
+                    <strong>Reserve Table</strong></a>
                   <!-- <button class="btn-lg btn btn-warning " type="button">Reserve Table</button> -->
                 </div>
             </div>
         </div>
     </header>
+
+    <div id="reserveModal" class="modal fade" role="dialog">
+      <div class="modal-dialog modal-lg" role="content">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 class="modal-title">Reserve a Table</h4>
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+          </div>
+          <div class="modal-body">
+
+            <form>
+              <div class="row form-group">
+                <div class="col-12 col-sm-2">
+                  <p>Number of Guests</p>
+                </div>
+                <div class="col-12 col-sm-10 ">
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="1" name="guests" class="custom-control-input">
+                    <label class="custom-control-label" for="1">1</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="2" name="guests" class="custom-control-input">
+                    <label class="custom-control-label" for="2">2</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="3" name="guests" class="custom-control-input">
+                    <label class="custom-control-label" for="3">3</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="4" name="guests" class="custom-control-input">
+                    <label class="custom-control-label" for="4">4 </label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="5" name="guests" class="custom-control-input">
+                    <label class="custom-control-label" for="5">5</label>
+                  </div>
+                  <div class="custom-control custom-radio custom-control-inline">
+                    <input type="radio" id="6" name="guests" class="custom-control-input">
+                    <label class="custom-control-label" for="6">6 </label>
+                  </div>
+                </div>
+
+
+              </div>
+
+              <div class="row form-group">
+                  <label for="Smoke" class="col-12 col-sm-2 col-form-label">Section</label>
+                  <div id="Smoke" class="btn btn-group col-12 col-sm-10">
+                    <a role="button" class="btn btn-success active" aria-pressed="true" data-toggle="button"  href="#">Non-Smoking</a>
+                    <a role="button" class="btn btn-danger" href="#">Smoking</a>
+                  </div>
+              </div>
+
+              <div class="row form-group">
+                <label for="dateTime" class="col-12 col-sm-2 col-form-label">Date and Time</label>
+
+                <div class="col-12 col-sm-4">
+                  <input type="datetime" name="dateTime" placeholder="Date" class="form-control" id="date">
+                </div>
+
+                <div class="col-12 col-sm-4">
+                  <input type="datetime" name="dateTime" placeholder="Time" class="form-control" id="Time">
+                </div>
+
+              </div>
+              <div class="container">
+                <div class="row form-group">
+                  <button type="button" class="btn btn-secondary offset-sm-2 mr-1" name="button"><strong>Cancel</strong></button>
+                  <button class="btn btn-primary " type="button" name="button"><strong>Reserve</strong></button>
+                </div>
+              </div>
+
+            </form>
+
+
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div class="container">
       <div class="row row-content">
@@ -209,75 +287,6 @@
         </div>
     </div>
 
-    <div class="mt-3 mb-5">
-      <div class="row row-content">
-        <div class="col-12 col-sm-8 offset-sm-2">
-          <div class="card" id="reserve">
-            <h3 class="card-header bg-warning text-white ">Reserve a Table</h3>
-            <div class="card-body">
-              <form >
-                <div class="row form-group">
-                  <div class="col-12 col-sm-2">
-                    <p>Number of Guests</p>
-                  </div>
-                  <div class="col-12 col-sm-10 ">
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="1" name="guests" class="custom-control-input">
-                      <label class="custom-control-label" for="1">1</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="2" name="guests" class="custom-control-input">
-                      <label class="custom-control-label" for="2">2</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="3" name="guests" class="custom-control-input">
-                      <label class="custom-control-label" for="3">3</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="4" name="guests" class="custom-control-input">
-                      <label class="custom-control-label" for="4">4 </label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="5" name="guests" class="custom-control-input">
-                      <label class="custom-control-label" for="5">5</label>
-                    </div>
-                    <div class="custom-control custom-radio custom-control-inline">
-                      <input type="radio" id="6" name="guests" class="custom-control-input">
-                      <label class="custom-control-label" for="6">6 </label>
-                    </div>
-                  </div>
-
-
-                </div>
-                <div class="row form-group">
-                  <label for="dateTime" class="col-12 col-sm-2 col-form-label">Date and Time</label>
-
-                  <div class="col-12 col-sm-4">
-                    <input type="datetime" name="dateTime" placeholder="Date" class="form-control" id="date">
-                  </div>
-
-                  <div class="col-12 col-sm-4">
-                    <input type="datetime" name="dateTime" placeholder="Time" class="form-control" id="Time">
-                  </div>
-
-                </div>
-                <div class="container">
-                  <div class="row form-group">
-                    <button class="btn btn-primary offset-sm-2" type="button" name="button"><strong>Reserve</strong></button>
-                  </div>
-                </div>
-
-              </form>
-
-            </div>
-
-          </div>
-        </div>
-
-      </div>
-    </div>
-
-
     <footer class="footer">
         <div class="container">
             <div class="row ">
@@ -323,11 +332,7 @@
 <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
 <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
 <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
-<script>
-  $(document).ready(function(){
-    $('[data-toggle="tooltip"]').tooltip();
-  });
-</script>
+
 </body>
 
 </html>
