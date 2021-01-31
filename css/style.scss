@@ -15,7 +15,7 @@ $carousel-item-height:300px;
   @include zero-margin(0px,0px);
 }
 .row-content{
-@include zero-margin(0px,0px);
+@include zero-margin(50px,0px);
 border-bottom: 1px ridge;
 min-height: 400px;
 }
@@ -26,7 +26,13 @@ min-height: 400px;
 .jumbotron{
   @include zero-margin(70px,30px);
   background: $background-light;
-  color: #0f0f0f;
+  color: floralwhite;
+
+}
+address{
+    font-size:80%;
+    margin:0px;
+    color:#0f0f0f;
 }
 body{
   padding: 50px 0px 0px 0px;
@@ -59,4 +65,16 @@ body{
   position: absolute;
   bottom: 0px;
   z-index: 1;
+}
+.modal-body{
+  background-color: $background-pale;
+}
+.modal-header{
+  background-color: $background-dark;
+  color: floralwhite;
+}
+.modal{
+  .close{
+    color: floralwhite;
+  }
 }
