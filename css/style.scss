@@ -14,6 +14,7 @@ $carousel-item-height:300px;
 .row-header{
   @include zero-margin(0px,0px);
 }
+
 .row-content{
 @include zero-margin(50px,0px);
 border-bottom: 1px ridge;
@@ -46,8 +47,6 @@ body{
   border-bottom: 1px solid $lt-gray;
   border-right: 1px solid $lt-gray;
 }
-
-//Nesting Selectors
 .carousel{
   background: $background-dark;
   .carousel-item{
